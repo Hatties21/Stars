@@ -84,7 +84,7 @@
 
         var Star = function () {
             this.orbitRadius = random(maxOrbit(w, h));
-            this.radius = random(60, this.orbitRadius) / 8;
+            this.radius = random(60, this.orbitRadius) / 10;
             //Star size
             this.orbitX = w / 2;
             this.orbitY = h / 2;
@@ -119,7 +119,7 @@
 
         function animation() {
             ctx.globalCompositeOperation = 'source-over';
-            ctx.globalAlpha = 0.5; //Tail
+            ctx.globalAlpha = 0.2; //Tail
             ctx.fillStyle = 'hsla(' + hue + ', 64%, 6%, 2)';
             ctx.fillRect(0, 0, w, h)
 
